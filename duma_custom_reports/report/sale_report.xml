@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <report
+                id="action_report_edited_saleorder"
+                string="Quotation / Order (Edited)"
+                model="sale.order"
+                report_type="qweb-pdf"
+                file="duma_custom_reports.report_edited_saleorder"
+                name="duma_custom_reports.report_edited_saleorder"
+                paperformat="duma_custom_reports.edited_paperformat_euro"
+                print_report_name="(object.state in ('draft', 'sent') and 'Quotation (Edited) - %s' % (object.name)) or
+                'Order (Edited) - %s' % (object.name)"
+        />
+
+    </data>
+</odoo>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="external_layout_duma" inherit_id="web.external_layout" primary="True">
+            <xpath expr="//t[@t-call='web.external_layout_standard']" position="attributes">
+                <attribute name="t-call">duma_custom_reports.external_layout_header_duma</attribute>
+            </xpath>
+        </template>
+
+<!--        <template id="external_layout_header_duma" inherit_id="web.external_layout_standard" primary="True">-->
+<!--            <xpath expr="//div[hasclass('header')]" position="replace">-->
+<!--                <div class="header">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-xs-3 mb4">-->
+<!--                            <img t-if="company.logo" t-att-src="'data:image/png;base64,%s' % to_text(company.logo)"-->
+<!--                                 style="max-width: 100%;"/>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div t-if="company.logo or company.report_header" class="row zero_min_height">-->
+<!--                        <div class="col-xs-12">-->
+<!--                            <div style="border-bottom: 1px solid black;"/>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="row" style="line-height: normal;">-->
+<!--                        <div t-if="company.report_header" t-field="company.report_header" style="margin-left:15px;"-->
+<!--                             name="moto"/>-->
+<!--                        <div class="col-xs-6" name="company_address" style="margin-top:5px;">-->
+<!--                            <span t-field="company.partner_id"-->
+<!--                                  t-field-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": true}'-->
+<!--                                  style="display:inline-block;"/>-->
+<!--                            <p t-if="company.partner_id.vat">-->
+<!--                                VAT:-->
+<!--                                <span t-field="company.partner_id.vat"/>-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </xpath>-->
+<!--        </template>-->
+
+    </data>
+</odoo>

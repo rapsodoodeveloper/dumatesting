@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <template id="duma_report_assets" inherit_id="web.report_assets_common">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/less" href="/duma_custom_reports/static/src/less/edited_reports.less"/>
+        </xpath>
+    </template>
+
+</odoo>
